@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/8147b3d06baa305771ec637adbdcee5d.txt",
+      "dest": "index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "JWT_SECRET": "21f2f79265a20ca76592f646c4eb7b8335c0686e66ce4c3ec02cec9074d37eb6",
+    "MONGODB_URI": "mongodb+srv://33:ss33@cluster0.hhxy1qw.mongodb.net/?appName=Cluster0"
+  }
+}

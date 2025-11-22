@@ -1,0 +1,13 @@
+/* Tailwind CSS is now loaded via CDN in index.html */
+/* 保留一些基础样式设置 */
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 自定义工具类 */
+.smooth-transition {
+  transition: all 0.3s ease;
+}

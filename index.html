@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>销售订单管理系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3b82f6',
+              secondary: '#10b981',
+              accent: '#f59e0b',
+              danger: '#ef4444',
+              info: '#8b5cf6',
+            },
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+          },
+        }
+      }
+    </script>
+  </head>
+  <body class="font-inter bg-slate-50 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
